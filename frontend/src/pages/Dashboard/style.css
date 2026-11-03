@@ -1,0 +1,2 @@
+.dash__grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.dash__wide { grid-column: 1 / -1; }

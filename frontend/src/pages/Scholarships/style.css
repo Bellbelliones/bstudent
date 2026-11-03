@@ -1,0 +1,2 @@
+.filters { display: grid; gap: 0 1rem; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); align-items: end; margin-bottom: 1.5rem; }
+.filters .btn { margin-bottom: 1rem; }

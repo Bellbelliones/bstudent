@@ -1,0 +1,8 @@
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: .4rem; font: 600 1rem var(--font-body); border-radius: 8px; border: 2px solid transparent; cursor: pointer; text-decoration: none; transition: background .15s, border-color .15s; }
+.btn--md { padding: .7rem 1.25rem; }
+.btn--sm { padding: .4rem .85rem; font-size: .92rem; }
+.btn--primary { background: var(--teal); color: #fff; }
+.btn--primary:hover { background: var(--teal-d); }
+.btn--ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.btn--ghost:hover { border-color: var(--ink); }
+.btn:disabled { opacity: .55; cursor: not-allowed; }

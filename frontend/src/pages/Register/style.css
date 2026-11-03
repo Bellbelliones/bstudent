@@ -1,0 +1,8 @@
+.register { display: flex; justify-content: center; }
+.register__form { width: min(480px, 100%); }
+.register__form h1 { font-size: 2rem; }
+.register__roles { border: 0; padding: 0; margin: 0 0 1rem; display: grid; gap: .5rem; }
+.register__roles legend { font-weight: 600; margin-bottom: .4rem; padding: 0; }
+.register__roles label { border: 1px solid var(--line); border-radius: 8px; padding: .65rem .8rem; cursor: pointer; }
+.register__roles label.on { border-color: var(--teal); background: #e4f4f0; }
+.register__alt { margin: 1rem 0 0; color: var(--ink-2); }

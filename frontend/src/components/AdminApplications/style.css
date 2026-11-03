@@ -1,0 +1,4 @@
+.admin-table { overflow-x: auto; }
+.admin-table table { width: 100%; border-collapse: collapse; background: #fff; }
+.admin-table th, .admin-table td { text-align: left; padding: .7rem; border-bottom: 1px solid var(--line); }
+.admin-table select { font: inherit; padding: .3rem; }

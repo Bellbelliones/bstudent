@@ -1,0 +1,4 @@
+.recs { list-style: none; padding: 0; margin: 0; display: grid; gap: .6rem; }
+.recs li { display: flex; gap: .9rem; align-items: center; }
+.recs__score { min-width: 3.2rem; text-align: center; background: var(--ink); color: #fff; font: 700 .95rem var(--font-head); padding: .35rem 0; border-radius: 8px; }
+.recs small { display: block; color: var(--ink-2); }

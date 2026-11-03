@@ -1,0 +1,4 @@
+.appform { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .appform { grid-template-columns: 1fr 360px; } }
+.appform__back { margin-left: 1rem; }
+.appform__done { border-color: var(--teal); }

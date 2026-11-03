@@ -1,0 +1,4 @@
+.suggest { background: #fff9e6; border: 1px solid var(--signal); border-radius: var(--radius); padding: 1.1rem; }
+.suggest__note { font-size: .85rem; color: var(--ink-2); margin-bottom: .5rem; }
+.suggest__meta { font-size: .92rem; }
+.suggest__actions { display: flex; gap: .6rem; flex-wrap: wrap; }

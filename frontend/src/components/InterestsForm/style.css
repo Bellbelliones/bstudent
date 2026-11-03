@@ -1,0 +1,7 @@
+.interests__grid { display: grid; gap: 0 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.interests__cats { border: 0; padding: 0; margin: 0 0 1.25rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+.interests__cats legend { font-weight: 600; margin-bottom: .5rem; padding: 0; }
+.interests__cats label { border: 1px solid var(--line); border-radius: 99px; padding: .3rem .8rem; cursor: pointer; background: #fff; }
+.interests__cats label.on { background: var(--ink); color: #fff; border-color: var(--ink); }
+.interests__cats input { accent-color: var(--signal); }
+.interests__msg { margin-left: 1rem; color: var(--ink-2); }

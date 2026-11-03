@@ -1,0 +1,7 @@
+.sd { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .sd { grid-template-columns: 1fr 340px; } }
+.sd__cat { color: var(--teal-d); font-weight: 600; margin: 0; }
+.sd__desc { font-size: 1.1rem; }
+.sd__side dt { color: var(--ink-2); font-size: .88rem; }
+.sd__side dd { margin: 0 0 .9rem; font-weight: 600; }
+.sd__note { font-size: .88rem; margin: .8rem 0 0; }

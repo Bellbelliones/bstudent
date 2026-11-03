@@ -1,0 +1,8 @@
+.md { display: grid; gap: 2rem; grid-template-columns: 1fr; align-items: start; }
+@media (min-width: 900px) { .md { grid-template-columns: 1fr 340px; } }
+.md__cat { color: var(--teal-d); font-weight: 600; margin: 0; }
+.md__desc { font-size: 1.1rem; }
+.md__price { font: 700 2rem var(--font-head); margin: 0 0 .5rem; }
+.md__side dt { color: var(--ink-2); font-size: .88rem; }
+.md__side dd { margin: 0 0 .9rem; font-weight: 600; }
+.md__note { font-size: .88rem; margin: .8rem 0 0; }

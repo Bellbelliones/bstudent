@@ -1,0 +1,2 @@
+.empty { border: 2px dashed var(--line); border-radius: var(--radius); padding: 1.5rem; text-align: left; }
+.empty p { color: var(--ink-2); }

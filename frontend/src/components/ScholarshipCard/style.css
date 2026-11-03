@@ -1,0 +1,9 @@
+.s-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.1rem; display: flex; flex-direction: column; }
+.s-card__top { display: flex; justify-content: space-between; align-items: center; gap: .5rem; margin-bottom: .6rem; }
+.s-card__cat { color: var(--teal-d); font-weight: 600; font-size: .9rem; }
+.s-card h3 a { color: var(--ink); text-decoration: none; }
+.s-card h3 a:hover { text-decoration: underline; }
+.s-card p { color: var(--ink-2); font-size: .95rem; }
+.s-card__meta { display: flex; gap: 1.25rem; flex-wrap: wrap; margin: auto 0 0; font-size: .88rem; }
+.s-card__meta dt { color: var(--ink-2); }
+.s-card__meta dd { margin: 0; font-weight: 600; }

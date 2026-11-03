@@ -1,0 +1,4 @@
+.checkout { max-width: 680px; }
+.checkout__total { font-size: 1.2rem; }
+.checkout__pay { border-top: 1px solid var(--line); padding-top: 1rem; }
+.checkout__dev { background: #eef2f5; border-radius: 8px; padding: .8rem 1rem; }

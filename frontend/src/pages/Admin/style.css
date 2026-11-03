@@ -1,0 +1,4 @@
+.admin__tabs { display: flex; gap: .5rem; margin-bottom: 1.25rem; }
+.admin__tabs button { font: 600 1rem var(--font-body); padding: .5rem 1rem; border: 1px solid var(--line); background: #fff; border-radius: 8px; cursor: pointer; }
+.admin__tabs button[aria-selected="true"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.admin__form { max-width: 560px; }

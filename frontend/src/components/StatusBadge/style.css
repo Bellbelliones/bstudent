@@ -1,0 +1,5 @@
+.status { display: inline-block; padding: .15rem .6rem; border-radius: 99px; font-size: .82rem; font-weight: 600; border: 1px solid currentColor; }
+.status--ok { color: var(--teal-d); background: #e4f4f0; }
+.status--warn { color: #7a5600; background: #fff4d1; }
+.status--bad { color: var(--danger); background: #fbe9e6; }
+.status--neutral { color: var(--ink-2); background: #eef2f5; }
