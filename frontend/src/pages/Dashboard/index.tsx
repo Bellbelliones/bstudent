@@ -18,7 +18,7 @@ export default function Dashboard() {
 
   return (
     <div className="container page dash">
-      <div className="page__head"><h1>Olá, {user.nome.split(" ")[0]}</h1><p>As suas candidaturas, mentorias e sugestões num só lugar.</p></div>
+      <div className="page__head"><h1>Olá! {user.nome.split(" ")[0]}</h1><p>As suas candidaturas, mentorias e sugestões num só lugar.</p></div>
       <div className="dash__grid">
         <section className="panel"><h2>Candidaturas</h2>{apps.loading ? <Loader /> : <ApplicationList items={apps.data ?? []} />}</section>
         <section className="panel"><h2>Mentorias</h2>{contracts.loading ? <Loader /> : <ContractList items={contracts.data ?? []} />}</section>
