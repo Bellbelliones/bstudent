@@ -14,7 +14,7 @@ export default function Home() {
       <section className="hero">
         <div className="container hero__inner">
           <div className="hero__text">
-            <h1>Candidate-se à bolsa certa. Contrate um mentor só se quiser.</h1>
+            <h1>Candidate-se à bolsa certa. Contrate um mentor só se quiser(Recomendado).</h1>
             <p>O BStudent reúne bolsas de estudo abertas e mentorias de pessoas que já passaram pelo processo. A candidatura nunca depende de pagar nada.</p>
             <div className="hero__actions">
               <Button to="/bolsas">Ver bolsas abertas</Button>
