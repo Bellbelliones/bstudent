@@ -1,5 +1,16 @@
 export const CURRENCY = "AOA"; // altere aqui a moeda das mentorias
 export const NIVEIS = ["Ensino secundário", "Licenciatura", "Mestrado", "Doutoramento"];
+export const PAISES = [
+  "África do Sul", "Alemanha", "Angola", "Argélia", "Argentina", "Austrália", "Áustria",
+  "Bélgica", "Brasil", "Cabo Verde", "Canadá", "Chile", "China", "Colômbia", "Coreia do Sul",
+  "Cuba", "Dinamarca", "Egito", "Emirados Árabes Unidos", "Espanha", "Estados Unidos",
+  "Finlândia", "França", "Gana", "Grécia", "Guiné-Bissau", "Índia", "Indonésia", "Irlanda",
+  "Islândia", "Itália", "Japão", "Luxemburgo", "Marrocos", "Moçambique", "Namíbia",
+  "Noruega", "Nova Zelândia", "Países Baixos", "Polónia", "Portugal", "Quénia", "Reino Unido",
+  "República Democrática do Congo", "Rússia", "São Tomé e Príncipe", "Senegal", "Suécia",
+  "Suíça", "Tanzânia", "Timor-Leste", "Tunísia", "Turquia", "Ucrânia", "Uruguai", "Zâmbia",
+  "Zimbabué",
+];
 export const MODALIDADES = [
   { value: "online", label: "Online" },
   { value: "presencial", label: "Presencial" },
