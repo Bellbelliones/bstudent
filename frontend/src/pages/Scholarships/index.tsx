@@ -6,7 +6,7 @@ import Loader from "../../components/Loader";
 import ScholarshipCard from "../../components/ScholarshipCard";
 import { useFetch } from "../../hooks/useFetch";
 import { Bolsa, Categoria } from "../../types";
-import { NIVEIS } from "../../utils/format";
+import { NIVEIS, PAISES } from "../../utils/format";
 import "./style.css";
 
 export default function Scholarships() {
@@ -30,7 +30,9 @@ export default function Scholarships() {
         <FormField label="Categoria">
           <select value={form.categoria} onChange={set("categoria")}><option value="">Todas</option>{categorias?.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}</select>
         </FormField>
-        <FormField label="País"><input value={form.pais} onChange={set("pais")} /></FormField>
+        <FormField label="País">
+          <select value={form.pais} onChange={set("pais")}><option value="">Todos</option>{PAISES.map((p) => <option key={p}>{p}</option>)}</select>
+        </FormField>
         <FormField label="Nível">
           <select value={form.nivel} onChange={set("nivel")}><option value="">Todos</option>{NIVEIS.map((n) => <option key={n}>{n}</option>)}</select>
         </FormField>
