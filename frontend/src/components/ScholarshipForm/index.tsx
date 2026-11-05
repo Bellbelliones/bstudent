@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import { api } from "../../services/api";
 import { Categoria } from "../../types";
-import { NIVEIS } from "../../utils/format";
+import { NIVEIS, PAISES } from "../../utils/format";
 import Button from "../Button";
 import FormField from "../FormField";
 
@@ -24,7 +24,9 @@ export default function ScholarshipForm({ categorias, onCreated }: { categorias:
       {error && <p className="form-error" role="alert">{error}</p>}
       <FormField label="Título"><input value={f.titulo} onChange={set("titulo")} required /></FormField>
       <FormField label="Descrição"><textarea value={f.descricao} onChange={set("descricao")} required /></FormField>
-      <FormField label="País"><input value={f.pais} onChange={set("pais")} /></FormField>
+      <FormField label="País">
+        <select value={f.pais} onChange={set("pais")}><option value="">Selecione</option>{PAISES.map((p) => <option key={p}>{p}</option>)}</select>
+      </FormField>
       <FormField label="Nível académico">
         <select value={f.nivel_academico} onChange={set("nivel_academico")}><option value="">Qualquer</option>{NIVEIS.map((n) => <option key={n}>{n}</option>)}</select>
       </FormField>
