@@ -35,6 +35,7 @@ r.get("/mentorships", men.list);
 r.get("/mentorships/:id", men.get);
 r.post("/mentor/mentorships", ...mentor, men.create);
 r.get("/mentor/mentorships", ...mentor, men.listMine);
+r.get("/mentor/mentorships/:id/contracts", ...mentor, men.enrollments);
 
 r.post("/mentorship-contracts", ...candidato, con.create);
 r.get("/mentorship-contracts/me", ...candidato, con.listMine);

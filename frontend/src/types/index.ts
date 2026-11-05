@@ -29,3 +29,13 @@ export interface UtilizadorAdmin {
   id: string; nome: string; email: string; telefone: string | null;
   role: Role; estado: "ativo" | "suspenso"; criado_em: string;
 }
+export interface Mentoria {
+  id: string; titulo: string; descricao: string; preco: number; modalidade: string; estado: string;
+  categoria_id: string | null; categoria_nome: string | null; mentor_nome: string;
+  total_contratacoes?: number; ativas?: number; pendentes?: number;
+}
+export interface Inscrito {
+  id: string; estado: string; data_contratacao: string;
+  candidato_nome: string; candidato_email: string; pagamento_estado: string | null;
+  bolsa_titulo: string | null;
+}

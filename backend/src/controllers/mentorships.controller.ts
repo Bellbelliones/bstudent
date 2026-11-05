@@ -19,3 +19,6 @@ export const create = asyncHandler(async (req, res) =>
   res.status(201).json(await svc.create(req.user!.id, createSchema.parse(req.body)))
 );
 export const listMine = asyncHandler(async (req, res) => res.json(await svc.listMine(req.user!.id)));
+export const enrollments = asyncHandler(async (req, res) =>
+  res.json(await svc.listEnrollments(req.user!.id, req.params.id))
+);
