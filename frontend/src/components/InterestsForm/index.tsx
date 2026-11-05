@@ -1,7 +1,7 @@
 import { FormEvent, useState } from "react";
 import { api } from "../../services/api";
 import { Categoria, User } from "../../types";
-import { NIVEIS } from "../../utils/format";
+import { NIVEIS, PAISES } from "../../utils/format";
 import Button from "../Button";
 import FormField from "../FormField";
 import "./style.css";
@@ -46,7 +46,12 @@ export default function InterestsForm({ user, categorias, onSaved }: Props) {
         </FormField>
         <FormField label="Instituição"><input value={instituicao} onChange={(e) => setInstituicao(e.target.value)} /></FormField>
         <FormField label="Área de formação"><input value={area} onChange={(e) => setArea(e.target.value)} /></FormField>
-        <FormField label="País preferido para estudar"><input value={pais} onChange={(e) => setPais(e.target.value)} /></FormField>
+        <FormField label="País preferido para estudar">
+          <select value={pais} onChange={(e) => setPais(e.target.value)}>
+            <option value="">Selecione</option>
+            {PAISES.map((p) => <option key={p}>{p}</option>)}
+          </select>
+        </FormField>
       </div>
       <fieldset className="interests__cats">
         <legend>Áreas de interesse</legend>
