@@ -25,3 +25,7 @@ export interface Contratacao {
 export interface Pagamento { id: string; valor: number; estado: string; referencia_gateway: string }
 export interface Recomendacao { tipo: "bolsa" | "mentoria"; pontuacao: number; item: Bolsa & Mentoria }
 export interface CandidaturaAdmin { id: string; estado: string; data_candidatura: string; candidato_nome: string; bolsa_titulo: string }
+export interface UtilizadorAdmin {
+  id: string; nome: string; email: string; telefone: string | null;
+  role: Role; estado: "ativo" | "suspenso"; criado_em: string;
+}

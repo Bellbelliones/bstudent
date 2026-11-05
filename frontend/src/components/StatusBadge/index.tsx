@@ -5,6 +5,7 @@ const MAP: Record<string, [string, "ok" | "warn" | "bad" | "neutral"]> = {
   aprovada: ["Aprovada", "ok"], rejeitada: ["Rejeitada", "bad"],
   pendente: ["Pagamento pendente", "warn"], aprovado: ["Pago", "ok"], falhado: ["Pagamento falhou", "bad"],
   cancelado: ["Cancelado", "bad"], reembolsado: ["Reembolsado", "neutral"], ativa: ["Ativa", "ok"], cancelada: ["Cancelada", "bad"],
+  ativo: ["Ativo", "ok"], suspenso: ["Suspenso", "bad"],
 };
 
 export default function StatusBadge({ estado }: { estado: string }) {

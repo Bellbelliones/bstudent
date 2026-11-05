@@ -7,6 +7,7 @@ import * as app from "../controllers/applications.controller";
 import * as men from "../controllers/mentorships.controller";
 import * as con from "../controllers/contracts.controller";
 import * as rec from "../controllers/recommendations.controller";
+import * as usr from "../controllers/users.controller";
 
 const r = Router();
 const candidato = [authenticate, requireRole("candidato")];
@@ -45,5 +46,7 @@ r.get("/recommendations/me", ...candidato, rec.mine);
 r.get("/admin/applications", ...admin, app.adminList);
 r.patch("/admin/applications/:id", ...admin, app.adminSetEstado);
 r.post("/admin/scholarships", ...admin, sch.create);
+r.get("/admin/users", ...admin, usr.adminList);
+r.patch("/admin/users/:id", ...admin, usr.adminSetEstado);
 
 export default r;

@@ -1,12 +1,13 @@
 import { useState } from "react";
 import AdminApplications from "../../components/AdminApplications";
+import AdminUsers from "../../components/AdminUsers";
 import ScholarshipForm from "../../components/ScholarshipForm";
 import { useFetch } from "../../hooks/useFetch";
 import { Categoria } from "../../types";
 import "./style.css";
 
 export default function Admin() {
-  const [tab, setTab] = useState<"candidaturas" | "bolsas">("candidaturas");
+  const [tab, setTab] = useState<"candidaturas" | "bolsas" | "utilizadores">("candidaturas");
   const [created, setCreated] = useState(false);
   const cats = useFetch<Categoria[]>("/categories");
   return (
@@ -15,10 +16,11 @@ export default function Admin() {
       <div className="admin__tabs" role="tablist">
         <button role="tab" aria-selected={tab === "candidaturas"} onClick={() => setTab("candidaturas")}>Candidaturas</button>
         <button role="tab" aria-selected={tab === "bolsas"} onClick={() => setTab("bolsas")}>Nova bolsa</button>
+        <button role="tab" aria-selected={tab === "utilizadores"} onClick={() => setTab("utilizadores")}>Utilizadores</button>
       </div>
-      {tab === "candidaturas" ? (
-        <AdminApplications />
-      ) : (
+      {tab === "candidaturas" && <AdminApplications />}
+      {tab === "utilizadores" && <AdminUsers />}
+      {tab === "bolsas" && (
         <div className="panel admin__form">
           {created && <p role="status">Bolsa publicada.</p>}
           <ScholarshipForm categorias={cats.data ?? []} onCreated={() => setCreated(true)} />
