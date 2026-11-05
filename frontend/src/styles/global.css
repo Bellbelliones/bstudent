@@ -1,6 +1,6 @@
 :root {
-  --ink: #0e2238; --ink-2: #44586c; --paper: #f2f5f8; --card: #ffffff; --line: #d3dde6;
-  --teal: #0f7b6c; --teal-d: #0a5c51; --signal: #ffc93c; --danger: #b3321f;
+  --ink: #493126; --ink-2: #745374; --paper: #f6efe8; --card: #ffffff; --line: #e6d5c5;
+  --teal: #a87552; --teal-d: #745441; --signal: #c18a35; --danger: #b94b2b;
   --radius: 10px;
   --font-head: "Bricolage Grotesque", system-ui, sans-serif;
   --font-body: "Public Sans", system-ui, sans-serif;

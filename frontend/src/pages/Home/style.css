@@ -2,16 +2,66 @@
 .hero__inner { display: grid; gap: 2.5rem; grid-template-columns: 1fr; align-items: start; }
 @media (min-width: 900px) { .hero__inner { grid-template-columns: 1.1fr 1fr; } }
 .hero__actions { display: flex; gap: .75rem; flex-wrap: wrap; }
-.board { background: var(--ink); color: #fff; border-radius: var(--radius); padding: 1.25rem 1.5rem; }
-.board h2 { font-size: 1.2rem; margin-bottom: .75rem; }
+
+.hero__text h1{
+    color: var(--ink);
+    front-size: clamp (2rem, 5vw, 3.5rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+}
+
+hero__text p{
+    color: var(--ink)2;
+    front-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.board {
+  background: #ffffff;
+  color: #24352d;
+  border-radius: 18px;
+  padding: 1.5rem;
+  border: 1px solid #e5ebe7;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+.board h2 {
+  font-size: 1.35rem;
+  color: #173f35;
+  margin-bottom: 0.5rem;
+}
 .board ol { list-style: none; margin: 0; padding: 0; }
-.board li { display: grid; grid-template-columns: 6.5rem 1fr auto; gap: .75rem; align-items: center; padding: .7rem 0; border-top: 1px solid #ffffff2e; }
-.board__date { color: #b9c8d6; font-size: .88rem; }
-.board a { color: #fff; text-decoration: none; font-weight: 600; }
+.board li { display: grid;
+     grid-template-columns: 100px 1fr auto;
+      gap: 1rem;
+       align-items: center; 
+       padding: .7rem 0; 
+       margin-top: 0.75rem;
+        background: #f5f8f6;
+    border: 1px solid #e5ebe7; 
+border-radius: 12px;}
+
+.board__date { color: #173f35; 
+    font-size: .85rem;
+font-weight: 700;
+ }
+
+.board a { 
+    color: #24352d;
+     text-decoration: none; 
+     font-weight: 600; }
+
 .board a:hover { text-decoration: underline; }
-.board small { display: block; color: #b9c8d6; font-weight: 400; }
-.board__msg { color: #b9c8d6; }
+
+.board small { display: block; 
+    color: #78877e; 
+    font-weight: 400;
+margin-top: 5px;
+ }
+
+.board__msg { color: #78877e; }
 .steps { padding: 3rem 0; }
 .steps ol { display: grid; gap: 1.5rem; padding: 0; margin: 0; list-style: none; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); counter-reset: s; }
 .steps li { counter-increment: s; border-top: 3px solid var(--ink); padding-top: .75rem; }
 .steps h3::before { content: counter(s) ". "; color: var(--teal); }
+
